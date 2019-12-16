@@ -1,0 +1,93 @@
+
+<html >
+  <head>
+    <title>Athmamanna</title>
+  </head>
+  <body style="background-color: gainsboro;">
+    
+    <div class="jumbotron text-center">
+        <h1 class="display-3">Athmamanna</h1>
+        <p class="lead"><strong>Sunday School Files</strong> </p>
+        <hr>
+        <p>
+        </p>
+      </div>
+    <form action="https://drive.google.com/drive/folders/1XWSf3DL-JR2j3nMeDqIZIzC1-5DFpe2T?usp=sharing">    
+<button type="submit">click to access</button>
+    </form>
+    
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-analytics.js"></script>
+
+<script>
+ // Get a reference to the storage service, which is used to create references in the storage bucket
+var storage = firebase.storage();
+
+// Create a storage reference from our storage service
+var storageRef = storage.ref();
+
+// Create a child reference
+var BooksRef = storageRef.child('Books');
+// BooksRef now points to 'books'
+
+// Child references can also take paths delimited by '/'
+var bookRef = storageRef.child('Books/Hindi/Sunday School Text Book-1.pdf');
+// spaceRef now points to "Books/Hindi/Sunday School Text Book-1.pdf"
+// BooksRef still points to "Books"
+
+// Child references can also take paths delimited by '/'
+var bookRef = storageRef.child('Books/Hindi/Sunday School Text Book-2.pdf');
+// spaceRef now points to "Books/Hindi/Sunday School Text Book-2.pdf"
+// BooksRef still points to "Books"
+
+// Child references can also take paths delimited by '/'
+var bookRef = storageRef.child('Books/Hindi/Sunday School Text Book-3.pdf');
+// spaceRef now points to "Books/Hindi/Sunday School Text Book-3.pdf"
+// BooksRef still points to "Books"
+
+// Child references can also take paths delimited by '/'
+var bookRef = storageRef.child('Books/Hindi/Sunday School Text Book-4.pdf');
+// spaceRef now points to "Books/Hindi/Sunday School Text Book-4.pdf"
+// BooksRef still points to "Books"
+
+// Child references can also take paths delimited by '/'
+var bookRef = storageRef.child('Books/Hindi/Sunday School Text Book-5.pdf');
+// spaceRef now points to "Books/Hindi/Sunday School Text Book-5.pdf"
+// BooksRef still points to "Books"
+
+// Child references can also take paths delimited by '/'
+var bookRef = storageRef.child('Books/Hindi/Sunday School Text Book-6.pdf');
+// spaceRef now points to "Books/Hindi/Sunday School Text Book-6.pdf"
+// BooksRef still points to "Books"
+
+// Child references can also take paths delimited by '/'
+var bookRef = storageRef.child('Books/Hindi/Sunday School Text Book-7.pdf');
+// spaceRef now points to "Books/Hindi/Sunday School Text Book-7.pdf"
+// BooksRef still points to "Books"
+
+// Child references can also take paths delimited by '/'
+var bookRef = storageRef.child('Books/Hindi/Sunday School Text Book-8.pdf');
+// spaceRef now points to "Books/Hindi/Sunday School Text Book-8.pdf"
+// BooksRef still points to "Books"
+</script>
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
