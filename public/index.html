@@ -26,6 +26,9 @@
 <!--________________________________________________________________________________GRID 1______________________________________________________________________________________________________________________________________ -->
   <div class="grid-container">
     <div class="grid-item ">
+      <form action="https://firebasestorage.googleapis.com/v0/b/athmamanna-66a31.appspot.com/o/Books%2FHindi%2FSunday%20School%20Text%20Book-1.pdf?alt=media&token=a590c990-9212-4f86-ac70-1dd16fc29dfe">    
+        <button type="submit"></button>
+        </form>
       <object data="https://firebasestorage.googleapis.com/v0/b/athmamanna-66a31.appspot.com/o/Books%2FHindi%2FSunday%20School%20Text%20Book-1.pdf?alt=media&token=a590c990-9212-4f86-ac70-1dd16fc29dfe"  
       width="300" height="250"> 
    <embed src="https://firebasestorage.googleapis.com/v0/b/athmamanna-66a31.appspot.com/o/Books%2FHindi%2FSunday%20School%20Text%20Book-1.pdf?alt=media&token=a590c990-9212-4f86-ac70-1dd16fc29dfe" 
@@ -33,12 +36,10 @@
      <p>This browser does not support PDFs. Please download the PDF to view it: 
       <a href="https://firebasestorage.googleapis.com/v0/b/athmamanna-66a31.appspot.com/o/Books%2FHindi%2FSunday%20School%20Text%20Book-1.pdf?alt=media&token=a590c990-9212-4f86-ac70-1dd16fc29dfe">View the PDF</a>.
    </p> 
-   <form action="https://firebasestorage.googleapis.com/v0/b/athmamanna-66a31.appspot.com/o/Books%2FHindi%2FSunday%20School%20Text%20Book-1.pdf?alt=media&token=a590c990-9212-4f86-ac70-1dd16fc29dfe">    
-<button type="submit">Hindi Textbook 1</button>
-</form>
    </embed>
  </object>    
     </div>
+    
 <!--____________________________________________________________________________________________________________________________________________________________________________________________________________________________-->    
     <div class="grid-item ">
       <object data="https://firebasestorage.googleapis.com/v0/b/athmamanna-66a31.appspot.com/o/Books%2FHindi%2FSunday%20School%20Text%20Book-2.pdf?alt=media&token=b73dff17-6c3a-4bbd-a680-806b97fa487d"  
@@ -272,7 +273,14 @@ const firebaseConfig = {
 
 
 </script>
-
+<script>
+  var fileName = window.AppInventor.getWebViewString();
+  var storage = firebase.storage();
+  var pathReference = storage.ref(fileName);
+  pathReference.getDownloadURL().then(function(url) {
+  window.AppInventor.setWebViewString(url);
+           });
+</script>
 
 
 
